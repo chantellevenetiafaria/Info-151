@@ -729,7 +729,7 @@ header #burger-container button {
   border: 1px solid var(--white);
 }
 
-#signupModal {
+#signUpModal {
   display: none;
 }
 
