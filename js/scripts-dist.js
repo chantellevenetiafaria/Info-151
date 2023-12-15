@@ -84,6 +84,11 @@ var burgerBtn = document.querySelector("#burger-container button");
 /* --------------------
     Sign Up Modal
 -------------------- */
+// ... (existing JavaScript code)
+
+/* --------------------
+    Sign Up Modal
+-------------------- */
 var signUpModal = document.getElementById("signupModal");
 var signUpBtn = document.querySelector(".white-btn");
 var closeSignUpModalBtn = document.getElementById("close-sign-up-modal-btn");
@@ -96,5 +101,13 @@ function hideSignUpModal() {
     signUpModal.style.display = "none";
 }
 
+// Update the event listener for the signup button
 signUpBtn.addEventListener("click", showSignUpModal);
 closeSignUpModalBtn.addEventListener("click", hideSignUpModal);
+
+// Add an event listener to close the signup modal when clicking outside the form
+document.addEventListener("click", function (event) {
+    if (event.target === signUpModal) {
+        hideSignUpModal();
+    }
+});
