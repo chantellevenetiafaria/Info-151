@@ -78,4 +78,3 @@
   closeSignUpModalBtn.addEventListener("click", hideSignInModal);
  
   signInContainer.addEventListener("click", hideSignInModal);
-  
