@@ -18,6 +18,10 @@ a{
 #main-nav{
     display: none;
 
+    @include xl{
+        display: block;
+    }
+
     ul{
 
         @include xl{

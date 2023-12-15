@@ -2,10 +2,18 @@
     Base
 ============= */
 
-#validation-btn{
-    text-align: center;
-    padding: 100px;
+.show-signIn-container{
+    display: flex !important;
 }
+
+.hide-burger-x{
+    display: none !important;
+}
+
+.hide-burger-bars{
+    display: none !important;
+}
+
 
 ul{
     margin: 0;

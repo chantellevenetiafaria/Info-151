@@ -1,9 +1,6 @@
 /* =============
     Header
 ============= */
-/* =============
-    Header
-============= */
 header{
 
     display: grid;
@@ -40,7 +37,7 @@ header{
         grid-area: nav;
     }
 
-    #signIn-container{
+    #sign-in-up-buttons{
 
         display: none;
         grid-area: signIn;
