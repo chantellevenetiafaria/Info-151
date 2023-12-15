@@ -5,108 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/b733272de7.js" crossorigin="anonymous"></script>
-    <!-- Google Font -->
+    <script src="https://kit.fontawesome.com/7ab68a398d.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- FancyApps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 8 Modals</title>
+    <title>Week 10 Fancy Apps</title>
 </head>
 
 <body>
-
+    
     <section id="sign-in-container">
-
-            <form action="#">
-                <div id="close-button-container">
-                    <button class="close-btn" id="close-sign-up-modal-btn"><i class="fa-solid fa-xmark"></i></button>
-                </div>
-                    <input type="text" placeholder="User Name">
-                    <input type="text" placeholder="Password">
-                <div id="sign-in-button-container">
-                    <button class="signin-btn">Sign In</button>
-                </div>
-                
-            </form>
-        
-    </section>
-
-
-    <section id="sign-up-container">
-
         <form action="#">
             <div id="close-button-container">
                 <button class="close-btn" id="close-sign-up-modal-btn"><i class="fa-solid fa-xmark"></i></button>
             </div>
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="Address">
-                <input type="text" placeholder="State">
-                <input type="text" placeholder="Zip Code">
-                <input type="text" placeholder="Phone Number">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Send Button">
-                <input type="text" placeholder="Cancel Button">
-
-                <div id="sign-up-button-container">
-                    <button class="signup-btn">Sign In</button>
-                </div>
+            <input type="text" placeholder="User Name"> 
+            <input type="text" placeholder="Password"> 
+            <div id="sign-in-button-container">
+                <button class="white-btn">Sign In</button>
+            </div>
             
-                
         </form>
-    
     </section>
 
-
-
-
-
     <header>
+
         <section id="logo-container">
-            <img src="img/logo.svg" alt="logo for website">
+            <img src="img/logo.svg" alt="waterdrop logo">
         </section>
 
-        <nav id="mainNav">
+        <nav id="main-nav">
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Impact</a></li>
-                <li><a href="#">Location</a></li>   
-                
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Impact</a>
+                </li>
+                <li>
+                    <a href="#">Locations</a>
+                </li>
             </ul>
         </nav>
 
         <section id="sign-in-up-buttons">
-            <li><a href="#" class="signin-btn" id="sign-in-btn">Sign In</a></li>
-            <li><a href="#" class="signup-btn" id="sign-up-btn">Sign Up</a></li>
+            <button class="green-btn" id="sign-in-btn">Sign In</button>
+            <button class="white-btn">Sign Up</button>
         </section>
-
 
         <section id="burger-container">
             <button>
-                <i class="fa-solid fa-burger" id="burger-bars"></i>
+                <i class="fa-solid fa-bars" id="burger-bars"></i>
                 <i class="fa-solid fa-xmark hide-burger-x" id="burger-x"></i>
             </button>
+            
         </section>
 
-        
-
-        
     </header>
 
     <section id="hero"></section>
 
+    <section id="fancybox">
+        <div id="fb-grid-item">
+            <h1>Fancybox</h1>
+            <ul>
+                <li>                                              
+                    <a href="img/fancy/fancy-1.jpg" data-fancybox data-fancybox="gallery-1" data-caption="Sea Turtle"><img src="img/fancy/fancy-1-tn.jpg" alt="sea turtle"></a>
+                </li>
 
+                <li>
+                    <a href="img/fancy/fancy-2.jpg" data-fancybox data-fancybox="gallery-2"><img src="img/fancy/fancy-3.jpg" alt="beach"></a>
+                </li>
 
+                <li>
+                    <a href="img/fancy/fancy-3.jpg" data-fancybox data-fancybox="gallery-1"><img src="img/fancy/fancy-2.jpg" alt="diver"></a>
+                </li>
 
-    <div id="validation-logo">
+                <li>
+                    <a href="img/fancy/fancy-4.jpg" data-fancybox data-fancybox="gallery-2"><img src="img/fancy/fancy-4.jpg" alt="ocean coast"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-        <a href=" https://validator.w3.org/nu/?doc=https://week-8-sign-in--info-151-cvf34.netlify.app/" target="_blank">
-        <img src="img/html-logo.svg" alt="Valid HTML 5">
-        </a>
-    
-    </div>
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+                <!-- <div class="f-carousel__slide"><img src="img/fancy/fancy-1.jpg" alt="sea turtle"></div> 
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-2.jpg" alt="beach"></div> 
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-3.jpg" alt="diver"></div> 
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-4.jpg" alt="ocean coast"></div>  -->
+
+                <div class="f-carousel__slide"><div id="fc-1" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-2" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-3" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-4" class="slide"></div></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
 
     <script src="js/scripts-dist.js"></script>
     
