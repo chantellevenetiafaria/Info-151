@@ -14,7 +14,9 @@ html {
   --black: #000000;
   --white: #ffffff;
   --green: #024A58;
+  --greenLight: #027e97;
   --gray: #74768F;
+  --red: #ae0a0a;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -333,9 +335,18 @@ template {
 /* =============
     Base
 ============= */
-#validation-btn {
-  text-align: center;
-  padding: 100px;
+.show-signIn-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.hide-burger-x {
+  display: none !important;
+}
+
+.hide-burger-bars {
+  display: none !important;
 }
 
 ul {
@@ -372,7 +383,7 @@ button {
 }
 
 .green-btn:hover {
-  background-color: var(--white);
+  background-color: var(--greenLight);
   color: var(--green);
 }
 
@@ -388,6 +399,23 @@ button {
 
 .white-btn:hover {
   background-color: var(--grey);
+  color: var(--white);
+}
+
+.close-btn {
+  background-color: var(--red);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--white);
 }
 
@@ -433,6 +461,11 @@ a {
 
 #main-nav {
   display: none;
+}
+@media (min-width: 1200px) {
+  #main-nav {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
   #main-nav ul {
@@ -524,7 +557,7 @@ header #main-nav {
   -ms-grid-column-span: 2;
   grid-area: nav;
 }
-header #signIn-container {
+header #sign-in-up-buttons {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -533,7 +566,7 @@ header #signIn-container {
   padding: 21px 24px;
 }
 @media (min-width: 768px) {
-  header #signIn-container {
+  header #sign-in-up-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -550,11 +583,11 @@ header #signIn-container {
   }
 }
 @media (min-width: 1200px) {
-  header #signIn-container {
+  header #sign-in-up-buttons {
     padding-right: 24px;
   }
 }
-header #signIn-container button {
+header #sign-in-up-buttons button {
   margin-left: 16px;
 }
 header #burger-container {
@@ -586,7 +619,7 @@ header #burger-container {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
   }
-  header #signIn-container {
+  header #sign-in-up-buttons {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -606,7 +639,7 @@ header #burger-container {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
   }
-  header #signIn-container {
+  header #sign-in-up-buttons {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
@@ -631,5 +664,67 @@ header #burger-container button {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 200vh;
+}
+
+/* =============
+    Sign In
+============= */
+#sign-in-container {
+  background-color: rgba(2, 74, 88, 0.7019607843);
+  height: 100vh;
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  display: none;
+}
+#sign-in-container form {
+  background-color: rgba(2, 74, 88, 0.8);
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+#sign-in-container form #close-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 24px;
+}
+#sign-in-container form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 60px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 8px;
+}
+#sign-in-container form #sign-in-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#sign-in-container form #sign-in-button-container button {
+  background-color: var(--greenLight);
+  color: var(--white);
+  border: 1px solid var(--white);
 }

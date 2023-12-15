@@ -9,15 +9,28 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 7 Navigation</title>
+    <title>Week 8 Modals</title>
 </head>
 
 <body>
-
+    
+    <section id="sign-in-container">
+        <form action="#">
+            <div id="close-button-container">
+                <button class="close-btn" id="close-sign-up-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <input type="text" placeholder="User Name"> 
+            <input type="text" placeholder="Password"> 
+            <div id="sign-in-button-container">
+                <button class="white-btn">Sign In</button>
+            </div>
+            
+        </form>
+    </section>
 
     <header>
 
@@ -42,14 +55,15 @@
             </ul>
         </nav>
 
-        <section id="signIn-container">
-            <button class="green-btn">Sign In</button>
+        <section id="sign-in-up-buttons">
+            <button class="green-btn" id="sign-in-btn">Sign In</button>
             <button class="white-btn">Sign Up</button>
         </section>
 
         <section id="burger-container">
             <button>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="burger-bars"></i>
+                <i class="fa-solid fa-xmark hide-burger-x" id="burger-x"></i>
             </button>
             
         </section>
@@ -60,18 +74,8 @@
 
     </section>
 
-    <div id="validation-btn">
-        <!--https://validator.w3.org/nu/?doc=YOUR-NETLIFY-URL-GOES-HERE  -->
-        <a href="https://validator.w3.org/nu/?doc=https://week-7-navigation-js-homework--info-151.netlify.app/" target="_blank">
-            <img src="img/html-logo.svg" alt="Valid HTML 5">
-        </a>
-    </div>
-
     <script src="js/scripts-dist.js"></script>
     
-<div data-netlify-deploy-id="655640b74d3b770008a94f09" data-netlify-site-id="80bbbcd2-7663-43bc-9db4-d299e00866ac" data-vcs="github" style="position:fixed">
-  
-  <script async src="https://netlify-cdp-loader.netlify.app/netlify.js"></script>
-</div></body>
+</body>
 
 </html>
