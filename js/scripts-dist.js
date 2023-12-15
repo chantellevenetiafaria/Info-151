@@ -1,7 +1,10 @@
 var mainNav = document.querySelector("#main-nav");
  var signInUpButtons = document.querySelector("#sign-in-up-buttons");
  var burgerBtn = document.querySelector("#burger-container button");
- 
+ var signInBtn = document.querySelector("#sign-in-btn");
+ var signInContainer = document.querySelector("#sign-in-container");
+ var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
+
  var burgerBars = document.querySelector("#burger-bars");
  var burgerX = document.querySelector("#burger-x");
  
@@ -51,9 +54,6 @@ var mainNav = document.querySelector("#main-nav");
  /* --------------------
      Sign In 
   -------------------- */  
-  var signInBtn = document.querySelector("#sign-in-btn");
-  var signInContainer = document.querySelector("#sign-in-container");
-  var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
  
  
   function showSignInModal() {
@@ -74,3 +74,27 @@ var mainNav = document.querySelector("#main-nav");
   closeSignUpModalBtn.addEventListener("click", hideSignInModal);
  
   signInContainer.addEventListener("click", hideSignInModal);
+
+
+var mainNav = document.querySelector("#main-nav");
+var signInUpButtons = document.querySelector("#sign-in-up-buttons");
+var burgerBtn = document.querySelector("#burger-container button");
+
+
+/* --------------------
+    Sign Up Modal
+-------------------- */
+var signUpModal = document.getElementById("signupModal");
+var signUpBtn = document.querySelector(".white-btn");
+var closeSignUpModalBtn = document.getElementById("close-sign-up-modal-btn");
+
+function showSignUpModal() {
+    signUpModal.style.display = "block";
+}
+
+function hideSignUpModal() {
+    signUpModal.style.display = "none";
+}
+
+signUpBtn.addEventListener("click", showSignUpModal);
+closeSignUpModalBtn.addEventListener("click", hideSignUpModal);

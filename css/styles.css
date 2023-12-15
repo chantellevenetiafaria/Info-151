@@ -728,3 +728,39 @@ header #burger-container button {
   color: var(--white);
   border: 1px solid var(--white);
 }
+
+#signupModal {
+  display: none;
+}
+
+
+/* =============
+  Forms
+============= */
+[type=text],
+[type=password],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=month],
+[type=week],
+[type=email],
+[type=number],
+[type=search],
+[type=tel],
+[type=time],
+[type=url],
+[type=color],
+textarea {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+/* =============
+  Sign In
+============= */
+#sign-in-container {
+  background-color: rgba(2, 74, 88, 0.7019607843);
+  /* ... (existing styles) ... */
+}
