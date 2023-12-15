@@ -81,17 +81,13 @@ var signInUpButtons = document.querySelector("#sign-in-up-buttons");
 var burgerBtn = document.querySelector("#burger-container button");
 
 
-/* --------------------
-    Sign Up Modal
--------------------- */
-// ... (existing JavaScript code)
 
 /* --------------------
     Sign Up Modal
 -------------------- */
-var signUpModal = document.getElementById("signupModal");
+var signUpModal = document.getElementById("signUpModal");
 var signUpBtn = document.querySelector(".white-btn");
-var closeSignUpModalBtn = document.getElementById("close-sign-up-modal-btn");
+var closeSignUpModalBtn = document.querySelector("#close-sign-Up-Modal-btn");
 
 function showSignUpModal() {
     signUpModal.style.display = "block";
