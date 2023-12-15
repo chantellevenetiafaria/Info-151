@@ -336,9 +336,21 @@ template {
   margin-top: 100px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
@@ -366,6 +378,8 @@ button {
   color: var(--white);
   padding: 15px 30px;
   border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 /* =============
@@ -391,11 +405,28 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul li a:link, nav ul li a:visited {
+  font-size: rem-cacl(18);
+  color: var(--white);
+  margin-left: 60px;
+}
 /* =============
     Header
 ============= */
 header {
-  margin-bottom: 70px;
+  padding: 40px 0 70px;
 }
 
 /* =============
@@ -405,9 +436,11 @@ header {
     Hero
 ============= */
 #hero {
-  color: var(--black);
-  background: linear-gradient(130deg, #cfc4df 0%, #a36af3 100%);
+  color: var(--white);
+  background: linear-gradient(130deg, #c3b2dd 0%, #c093ff 100%);
 }
 #hero #hero-content h1 {
   margin-bottom: 140px;
+  font-size: 3.75rem;
+  font-weight: 600;
 }
