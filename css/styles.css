@@ -338,9 +338,21 @@ template {
   margin-top: 100px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
@@ -409,8 +421,16 @@ textarea {
 /* =============
     Plans
 ============= */
-#plans h1 {
+#plans #plans-top {
+  text-align: center;
+}
+#plans #plans-top h1 {
   margin-bottom: 30px;
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+#plans #plans-top p {
+  font-size: 1.375rem;
 }
 #plans ul {
   margin-top: 30px;
@@ -422,6 +442,22 @@ textarea {
   -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
           box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
   padding: 50px;
+  text-align: center;
+}
+#plans .plan-card h2 {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+#plans .plan-card h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+#plans .plan-card h1 span {
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+#plans .plan-card ul li {
+  margin-bottom: 16px;
 }
 #plans .plan-card button {
   margin-top: 50px;
@@ -437,9 +473,10 @@ textarea {
 }
 #plans #selected-card > div #selected-top {
   color: var(--white);
-  background-color: var(--purple);
-  padding: 50px 50px 0 50px;
-  border-radius: 10px;
+  background-image: url("../img/selected-bg.svg");
+  background-size: cover;
+  height: 100px;
+  border: 1px solid red;
 }
 #plans #selected-card > div #selected-bottom {
   padding: 0px 50px 50px 50px;
