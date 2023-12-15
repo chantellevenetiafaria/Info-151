@@ -11,9 +11,9 @@ html {
     Variables
 ============= */
 :root {
-  --pink: #eeb5b5;
+  --black: #000000;
   --white: #ffffff;
-  --blue: #082b3d;
+  --blue: #42B4EE;
   --blueLight: #42B4EE10;
   --purple: #591EAE;
   --charcoal: #051114;
@@ -394,12 +394,12 @@ textarea {
     Footer
 ============= */
 footer {
-  background-color: var(--blue);
+  background-color: var(--charcoal);
   color: var(--white);
   padding: 100px 0 50px;
 }
 footer #footer-top h1 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 footer #footer-top #newsletter form {
   display: inline-block;
@@ -413,7 +413,7 @@ footer #footer-top #newsletter form input {
 }
 footer #footer-top #newsletter form button {
   color: var(--white);
-  background-color: var(--purple);
+  background-color: var(--blue);
   padding: 15px 30px;
   margin-left: -3px;
   border-radius: 0 5px 5px 0;
