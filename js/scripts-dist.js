@@ -74,12 +74,11 @@ var mainNav = document.querySelector("#main-nav");
   closeSignUpModalBtn.addEventListener("click", hideSignInModal);
  
   signInContainer.addEventListener("click", hideSignInModal);
-
+  signUpBtn.addEventListener("click", showSignUpModal);
 
 var mainNav = document.querySelector("#main-nav");
 var signInUpButtons = document.querySelector("#sign-in-up-buttons");
 var burgerBtn = document.querySelector("#burger-container button");
-
 
 
 /* --------------------
