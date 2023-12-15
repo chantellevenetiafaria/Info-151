@@ -84,25 +84,39 @@ var burgerBtn = document.querySelector("#burger-container button");
 /* --------------------
     Sign Up Modal
 -------------------- */
-var signUpModal = document.getElementById("signUpModal");
-var signUpBtn = document.querySelector(".white-btn");
-var closeSignUpModalBtn = document.querySelector("#close-sign-Up-Modal-btn");
+var signUpContainer = document.querySelector("#sign-up-container");
+var signUpButton = document.querySelector("#signUpButton");
+var cancelSignUpButton = document.querySelector("#cancelSignUpButton");
 
 function showSignUpModal() {
-    signUpModal.style.display = "block";
+    signUpContainer.classList.add("show-signUp-container");
 }
 
 function hideSignUpModal() {
-    signUpModal.style.display = "none";
+    signUpContainer.classList.remove("show-signUp-container");
 }
 
-// Update the event listener for the signup button
-signUpBtn.addEventListener("click", showSignUpModal);
-closeSignUpModalBtn.addEventListener("click", hideSignUpModal);
+signUpButton.addEventListener("click", function () {
+    // Add your signup logic here
+    var firstName = document.getElementById("first-name").value;
+    var lastName = document.getElementById("last-name").value;
+    var address = document.getElementById("address").value;
+    var state = document.getElementById("state").value;
+    var zipCode = document.getElementById("zip-code").value;
+    var phoneNumber = document.getElementById("phone-number").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
 
-// Add an event listener to close the signup modal when clicking outside the form
-document.addEventListener("click", function (event) {
-    if (event.target === signUpModal) {
+    // Perform signup validation and submit data as needed
+
+    // For demo purposes, just hiding the modal
+    hideSignUpModal();
+});
+
+cancelSignUpButton.addEventListener("click", hideSignUpModal);
+
+signUpContainer.addEventListener("click", function (event) {
+    if (event.target === signUpContainer) {
         hideSignUpModal();
     }
 });
